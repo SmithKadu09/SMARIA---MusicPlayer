@@ -39,7 +39,7 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-cyan-750 via-blue-950 to-slate-950">
+   <div className="min-h-screen bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950">
       <div className="navbar">
         <div className="flex gap-10 items-center justify-center">
           <img src="logo.png" alt="logo" width="200" height="200" />
@@ -52,7 +52,7 @@ export default function Home() {
             className="absolute left-10 top-1/2 h-6 w-6 -translate-y-1/2"
           />
           <input
-            className="border-blue-300 border p-3 pl-10 w-[40vh] rounded-4xl bg-slate-950"
+            className="border-blue-300 text-white border p-3 pl-10 w-[40vh] rounded-4xl bg-slate-950"
             type="text"
             placeholder="Search albums, artists, songs..."
             value={search}
@@ -117,7 +117,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-1 mt-10 m-8">
         <h1 className="text-2xl font-bold text-white">Welcome Ria,</h1>
-        <h1 className="text-2xl font-bold text-white">What to listen to today?</h1>
+        <h1 className="text-xl font-bold text-white">Your Recently Played,</h1>
         <div className="grid grid-cols-3 gap-8">
           {recentSongs.map((song) => (
             <Link
@@ -147,7 +147,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <div className="grid grid-cols-1 gap-4 mt-6">
+        <div className="grid mb-[10vh] grid-cols-1 gap-4 mt-6">
           {albums.map((item) => (
             <Link
               key={item.id}

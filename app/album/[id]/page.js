@@ -124,7 +124,7 @@ export default   function AlbumPage() {
                 </div>
 
                 {/* Song List */}
-                <div className="mt-4 flex flex-col gap-3">
+                <div className="mt-4 mb-[10vh] flex flex-col gap-3">
 
                     {albumSongs.map((song, index) => (
                         <div
@@ -146,7 +146,7 @@ export default   function AlbumPage() {
                 duration-300
               "
                         >
-                            <div className="flex items-center gap-5">
+                            <div className="flex  items-center gap-5">
 
                                 <span className="text-gray-500 w-6">
                                     {index + 1}
