@@ -49,10 +49,10 @@ export default function Home() {
           <img
             src="/search1.gif"
             alt="Search"
-            className="absolute left-10 top-1/2 h-6 w-6 -translate-y-1/2"
+            className="absolute left-15 top-1/2 h-6 w-6 -translate-y-1/2"
           />
           <input
-            className="border-blue-300 border p-3 pl-10 w-[40vh] rounded-4xl bg-slate-950"
+            className="border-blue-300 border text-white p-3 pl-10 w-[40vh] rounded-4xl bg-slate-950"
             type="text"
             placeholder="Search albums, artists, songs..."
             value={search}
